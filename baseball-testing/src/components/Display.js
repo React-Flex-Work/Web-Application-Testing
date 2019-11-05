@@ -1,14 +1,11 @@
 import React from 'react';
-import { addBall, addStrike } from './Dashboard';
 
-function Display() {
+function Display({ ball, strike }) {
     return (
         <div>
             <h1>Current Batter</h1>
-            <p>Ball Count: </p>
-            <p>{addBall}</p>
-            <p>Strike Count: </p>
-            <p>{addStrike}</p>
+            <p>Ball Count: {ball}</p>
+            <p>Strike Count: {strike}</p>
         </div>
     )
 }
